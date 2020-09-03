@@ -1,0 +1,52 @@
+
+<div class="container-fluid invoice-table">
+ 
+  <h3 class="table-heading">
+     <span class="profile-code">To Do</span>
+  </h3>
+
+  <div class="mat-elevation-z4">
+
+    <div class="table-responsive">
+      <header class="header"> 
+        <div class="task-input">
+          <mat-form-field appearance="outline">
+            <input matInput placeholder="What needs to be done?" [(ngModel)]="newTodo.title" (keyup.enter)="addTodo()">
+          </mat-form-field>
+          <hr>
+        </div>
+      </header>
+
+      <section class="main task-input" *ngIf="todos.length > 0">
+
+        <div class="todo-list">
+
+          <div *ngFor="let todo of todos" [class.completed]="todo.complete">
+            <div fxLayout="row" fxLayoutAlign="start" style="position: relative;">
+
+              <div style="margin-left: 30px;">
+                <label class="toggle" (click)="toggleTodoComplete(todo)" [ngClass]="{ 'closed': todo.complete == true }">{{todo.title}}</label>
+              </div>
+              
+              <div style="position: absolute; right: 30px;">
+                <button mat-mini-fab color="warn" (click)="removeTodo(todo)"><mat-icon>close</mat-icon></button>
+              </div>
+
+            </div>
+            <hr>
+          </div>
+
+        </div>
+
+      </section>
+
+      <footer class="footer" *ngIf="todos.length > 0">
+        <span class="todo-count"><strong>{{todos.length}}</strong> {{todos.length == 1 ? 'item' : 'items'}} left</span>
+      </footer>
+
+    </div>
+
+    <div *ngIf="todos.length == 0" class="no-record">No Task Added</div> 
+
+  </div>
+</div>

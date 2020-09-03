@@ -1,0 +1,28 @@
+.container{
+    position: relative;
+    top: 200px; 
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.card{
+    color: #666666;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+}
+.brand-logo{
+    width: 150px;
+    height: 50px;
+    text-align: center;
+}
+.imgLogos{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+.imglogo {    
+    margin: 2em;    
+    width: 80px;
+}

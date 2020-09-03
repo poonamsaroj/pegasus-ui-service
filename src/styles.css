@@ -1,0 +1,143 @@
+/* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+/* @import '~@angular/cdk/overlay-prebuilt.css'; */
+@import '~material-design-icons/iconfont/material-icons.css';
+
+input:focus, textarea, button {
+    outline: none !important;
+}
+body {
+    background: #F5F5F5;
+    margin: 0;
+}
+/* Font family start */
+@font-face {
+    font-family: 'Gotham Bold';
+    src: url(../src/assets/fonts/GothamBold.woff) format('woff')
+}
+@font-face {
+    font-family: 'Gotham Medium';
+    src: url(../src/assets/fonts/Gotham-Medium.woff) format('woff')
+}
+/* Font family end */
+
+/* Font family in application */
+*:not(mat-icon){ 
+    font-family: 'Gotham Medium'!important;
+    font-size: 1rem;
+}
+.content{
+    padding-top: 80px;
+}
+
+/* Feature styles */
+.pull-right{
+    float: right;
+}
+.pull-left{
+    float: left;
+}
+
+/* Table in all pages */
+table{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.table-heading .profile-code {
+    font-size: 4rem;
+    color: #d6acac;
+}
+.container-fluid{
+    width: 35%!important;
+    margin-bottom: 50px;
+}
+
+/* Table heading */
+.table-heading{
+    text-align: center;
+    color: #2E3192;
+}
+
+/* Global table filter */
+.table-filter{
+    float: right;
+}
+.global-filter .mat-form-field-appearance-outline .mat-form-field-infix{
+    padding: 0.3em 0 0.8em 0;
+}
+.global-filter .mat-form-field-appearance-outline .mat-form-field-wrapper {
+    margin: 0;
+}
+::ng-deep .mat-sort-header-arrow {
+    color: white;
+}
+tr.mat-header-row {
+    background: #2E3192;
+    min-width: 2800px;  
+    width: 100%;  
+}
+th.mat-header-cell {
+    color: white;
+}
+.textUnderline{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.hide{
+    display: none!important;
+}
+.loader{ 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    padding: 10px;
+}
+.no-record{
+    text-align: center;
+    width: 100%;
+    font-size: 1.2em;
+    padding-bottom: 20px;
+}
+.mat-table .mat-sort-header-container {
+    margin-bottom: 0.8rem;
+    text-align: center;
+}
+.mat-table tr.mat-header-row{
+    height: 3.5em;
+}
+.table {
+    margin-bottom: 0!important;
+}
+.table td {
+    vertical-align: middle!important;
+}
+.dark-overlay{
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    min-height:100%; 
+}
+::ng-deep .global-filter .mat-form-field-appearance-outline .mat-form-field-wrapper{
+    width: 220%;
+    margin: 10px 0 0 10px;
+    color: #2E3192;
+}
+::ng-deep.mat-form-field-appearance-outline .mat-form-field-outline{
+    color: #b1b3cc;
+}
+.task-input{
+    margin: 0 auto;
+    text-align: center;
+}
+.mat-form-field-appearance-outline .mat-form-field-wrapper{
+    width: 60vh;
+    padding: 20px 10px 10px 10px;
+}
+.footer{
+    text-align: center;
+    padding-bottom: 10px;
+}

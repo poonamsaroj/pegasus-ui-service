@@ -1,0 +1,35 @@
+/* Filter Form Control outer values */
+::ng-deep .global-filter .mat-form-field-appearance-outline .mat-form-field-wrapper{
+    width: 220%;
+    margin: 10px 0 0 10px;
+    color: #2E3192;
+}
+
+.export-buttons{
+    margin: 10px 10px 0 0;
+}
+
+@media only screen and (max-width: 700px) {
+    ::ng-deep .global-filter .mat-form-field-appearance-outline .mat-form-field-wrapper{
+        width: 100%;
+    }
+}
+
+table{
+    overflow: scroll;
+}
+
+@supports (-ms-ime-align: auto) {
+    .table-responsive {
+        overflow: hidden!important;
+    }
+}
+.toggle{
+    font-size: 25px;
+    margin-right: 20px;
+    color: #4d4d4d;
+}
+.closed{
+    text-decoration: line-through;
+    color: #bbbaba;
+}
